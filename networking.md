@@ -1,4 +1,7 @@
-## 網路參數設定
+## 網路查詢/修改指令
+
+### 查詢/修改本機資訊
+
 ```shell
 ### if series ###
 ifconfig [interface] [IP] [up|down|mtu|netmask|broadcast]
@@ -22,4 +25,12 @@ ip [-h[uman-readable] | -s[tatistics] | -c[olor] | -r[esolve]] \
    [link show | link set <device> up|down|name|address|mtu]    # link
    [address show | address add|del <IP/net> dev <device>]      # address
    [route show | route add|del <IP/net/default> [via GW] dev <device>] # route
+```
+
+### 查詢網域
+
+```shell
+dig <domain>
+host -a <domain>
+whois <domain>
 ```
